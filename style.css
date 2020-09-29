@@ -32,14 +32,13 @@ body {
   flex-direction: column;
   justify-content: space-around;
   display: none;
+  
+  color: #0050b3;
 }
 .m-menu .line {
   width: 100%;
   height: 1px;
   background-color: #fff;
-}
-.m-menu span{
-  color: #0050b3;
 }
 .search-input {
   font-size: 14px;
