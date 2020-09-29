@@ -32,6 +32,8 @@ body {
   flex-direction: column;
   justify-content: space-around;
   display: none;
+  
+  color: #0050b3;
 }
 .m-menu .line {
   width: 100%;
@@ -310,7 +312,8 @@ body {
 }
 .post-header .user-avatar {
   width: 48px;
-  height: 48px;
+  height: 48px;  
+  min-width: 48px;
   margin-right: 12px;
 }
 .post-info {
@@ -788,7 +791,7 @@ body {
   .search-input {
     width: 249px;
   }
-  F .navigation .user-avatar {
+  .navigation .user-avatar {
     margin-right: 0;
   }
 }
