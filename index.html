@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,9 +12,9 @@
 
 <body>
     <header class="header">
-        <div class="header-block">            
+        <div class="header-block">
             <button class="m-menu">
-                <span class="line">------</span>
+                <span class="line"></span> <!-- ------ -->
                 <span class="line"></span>
                 <span class="line"></span>
             </button>
@@ -22,10 +22,10 @@
                 <input type="text" class="search-input" placeholder="Search">
             </div>
             <div class="navigation">
-                <div class="user">
+                <a href="#" class="user">
                     <img src="img/avatar.png" alt="avatar" class="user-avatar">
                     <span class="user-name">Mateusz</span>
-                </div>
+                </a>
                 <nav class="navigation-panel">
                     <a href="#" class="navigation-link">Home</a>
                     <a href="#" class="navigation-link">Create</a>
@@ -43,7 +43,7 @@
                     </a>
                     <a href="#" class="icon-link">
                         <span class="notification">8</span>
-                        <svg class="header-icon" width="16" height="22">
+                        <svg class="header-icon header-icon-notification" width="16" height="22">
                             <use xlink:href="img/icons.svg#ball"></use>
                         </svg>
                     </a>
@@ -258,6 +258,66 @@
                 <!-- /.post-footer -->
             </div>
             <!-- /.post -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="user">
+                        <img src="img/figma-avatar.jpg" alt="avatar" class="user-avatar">
+                        <div class="post-info">
+                            <a href="#" class="post-author">Figma</a>
+                            <div class="post-info-time">
+                                <span class="post-time">6 hrs</span>
+                                <a href="#" class="post-setting">
+                                    <svg class="setting-icon" width="14" height="14">
+                                        <use xlink:href="img/icons.svg#setting"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="post-header-button">
+                        <svg class="post-button-icon" width="24" height="24">
+                            <use xlink:href="img/icons.svg#three-dots"></use>
+                        </svg>
+                    </button>
+                </div>
+                <!-- /.post-header -->
+                <div class="post-content">
+                    <p class="post-text">
+                        Want to implement type in your design system in Figma? This guide covers everything you should
+                        consider, from choosing the right typography scale to naming and organizing your text styles.
+                    </p>
+                </div>
+                <!-- /.post-content -->
+                <div class="likes">
+                    <svg class="likes-icon" width="16" height="16">
+                        <use xlink:href="img/icons.svg#like-active"></use>
+                    </svg>
+                    <span class="likes-counter">35</span>
+                </div>
+                <!-- /.likes -->
+                <div class="post-footer">
+                    <button class="post-button">
+                        <svg class="post-button-icon" width="24" height="24">
+                            <use xlink:href="img/icons.svg#like"></use>
+                        </svg>
+                        <span class="post-button-text">Like</span>
+                    </button>
+                    <button class="post-button">
+                        <svg class="post-button-icon" width="24" height="24">
+                            <use xlink:href="img/icons.svg#chat"></use>
+                        </svg>
+                        <span class="post-button-text">Comment</span>
+                    </button>
+                    <button class="post-button">
+                        <svg class="post-button-icon" width="24" height="24">
+                            <use xlink:href="img/icons.svg#share"></use>
+                        </svg>
+                        <span class="post-button-text">Share</span>
+                    </button>
+                </div>
+                <!-- /.post-footer -->
+            </div>
+            <!-- /.post -->
         </div>
         <!-- /.main-feed -->
         <div class="right-sidebar">
@@ -338,11 +398,59 @@
                     </button>
                 </div>
                 <!-- /.fanpage-header -->
-                <div class="fanpage-stats"></div>
+                <div class="fanpage-stats">
+                    <div class="fanpage-stats-image concuria"></div>
+                    <div class="fanpage-stats-groups">
+                        <a href="#" class="fanpage-stats-title">Concuria</a>
+                        <div class="fanpage-stats-group">
+                            <a href="#" class="fanpage-stats-link">
+                                <svg class="fanpage-stats-link-icon" width="16" height="16">
+                                    <use xlink:href="img/icons.svg#chat"></use>
+                                </svg>
+                                <span class="fanpage-stats-link-text">Messages</span>
+                            </a>
+                        </div>
+                        <div class="fanpage-stats-group">
+                            <a href="#" class="fanpage-stats-link">
+                                <svg class="fanpage-stats-link-icon" width="16" height="16">
+                                    <use xlink:href="img/icons.svg#ball"></use>
+                                </svg>
+                                <span class="fanpage-stats-link-text">Notifications</span>
+                                <span class="fanpage-stats-link-notifications">1</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <!-- /.fanpage-stats -->
-                <div class="fanpage-large"></div>
-                <!-- /.fanpage-large -->
-                <div class="fanpage-likes"></div>
+                <div class="fanpage-radio-group">
+                    <div class="fanpage-radio-group-item">
+                        <input type="radio" name="radio" id="likes" class="radio-button" checked>
+                        <label for="likes" class="label-radio-button">Likes</label>
+                    </div>
+                    <div class="fanpage-radio-group-item">
+                        <input type="radio" name="radio" id="views" class="radio-button">
+                        <label for="views" class="label-radio-button">Views</label>
+                    </div>
+                    <div class="fanpage-radio-group-item">
+                        <input type="radio" name="radio" id="posts" class="radio-button">
+                        <label for="posts" class="label-radio-button">Posts</label>
+                    </div>
+                </div>
+                <!-- /.fanpage-radio-group -->
+                <div class="fanpage-likes-group">
+                    <div class="fanpage-likes active">
+                        <span class="fanpage-likes-count">262</span>
+                        <span class="fanpage-likes-this-week">5 likes this week</span>
+                    </div>
+                    <div class="fanpage-views">
+                        <span class="fanpage-views-count">154</span>
+                        <span class="fanpage-views-this-week">53 views this week</span>
+                    </div>
+                    <div class="fanpage-posts">
+                        <span class="fanpage-posts-count">148</span>
+                        <span class="fanpage-posts-this-week">2 posts this week</span>
+                    </div>
+                </div>
                 <!-- /.fanpage-likes -->
             </div>
             <!-- /.fanpage -->
