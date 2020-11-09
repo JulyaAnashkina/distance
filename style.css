@@ -215,6 +215,7 @@ body {
 }
 .caret-down {
   margin-top: 12px;
+  margin-bottom: 25px;
 }
 .caret-down .nav-text {
   color: #1890ff;
